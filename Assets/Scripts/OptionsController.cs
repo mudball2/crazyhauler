@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OptionsController : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class OptionsController : MonoBehaviour
     public void SaveAndExit()
     {
         PlayerPrefsController.SetMasterVolume(volumeSlider.value);
-        // Insert code to navigate back to main menu.
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void SetDefaults()
