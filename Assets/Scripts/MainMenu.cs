@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
    }
 
    public void OptionsButton(){
-       Debug.Log("Game Options pushed!");
+       SceneManager.LoadScene("Options Screen");
    }
 
    public void CreditsButton(){
