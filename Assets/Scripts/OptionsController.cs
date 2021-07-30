@@ -31,7 +31,7 @@ public class OptionsController : MonoBehaviour
     public void SaveAndExit()
     {
         PlayerPrefsController.SetMasterVolume(volumeSlider.value);
-        FindObjectOfType<LevelLoader>().LoadMainMenu();
+        // Insert code to navigate back to main menu.
     }
 
     public void SetDefaults()
